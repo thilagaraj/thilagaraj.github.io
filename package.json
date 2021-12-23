@@ -1,0 +1,22 @@
+{
+  "name": "humblebee",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp",
+    "build": "NODE_ENV=production gulp css",
+    "build:css": "tailwindcss build -i src/style.css -o assets/css/tailwind.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "browser-sync": "^2.27.7",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "tailwindcss": "^3.0.7"
+  }
+}
