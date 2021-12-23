@@ -87,4 +87,10 @@
   border-bottom: 3px solid transparent;
   border-top: 3px solid #D90019;
 }
+#banner-container {
+  background-image: url('../img/dotted.png');
+  background-repeat: no-repeat;
+  background-position: 5% 15%;
+  background-size: 10%;
+}
 /*# sourceMappingURL=main.css.map */
