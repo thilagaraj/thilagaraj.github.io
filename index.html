@@ -31,11 +31,11 @@
     <div class="navigation w-full z-30 duration-300">
       <div class="container mx-auto">
         <nav
-          class="navbar py-6 px-10 navbar-expand-lg flex justify-between items-center relative duration-300 bg-white rounded-xl top-5 shadow">
+          class="navbar py-6 px-10 navbar-expand-lg lg:flex justify-between items-center relative duration-300 bg-white rounded-xl top-5 shadow">
           <a class="navbar-brand" href="index.html">
             <img src="assets/img/logo.png" class="relative -top-1.5 w-32" alt="Logo">
           </a>
-          <button class="navbar-toggler focus:outline-none block lg:hidden" type="button" data-toggle="collapse"
+          <button class="navbar-toggler focus:outline-none inline-block w-10 lg:hidden lg:static absolute right-2 top-6" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="toggler-icon"></span>
@@ -44,7 +44,7 @@
           </button>
 
           <div class="collapse navbar-collapse hidden lg:block duration-300" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto justify-center items-center lg:flex">
+            <ul class="navbar-nav mr-auto justify-center items-center lg:flex mt-5 lg:mt-0">
               <li class="nav-item">
                 <a class="menu-item active" href="#hero-area">Home</a>
               </li>
@@ -62,7 +62,7 @@
               </li>
             </ul>
           </div>
-          <div class="header-btn hidden sm:block sm:absolute sm:right-0 sm:mr-16 lg:static lg:mr-0">
+          <div class="collapse header-btn hidden sm:block sm:absolute sm:right-0 sm:mr-16 lg:static lg:mr-0 mt-5 lg:mt-0">
             <a class="btn btn-plain" href="#feature">Log in</a>
             <a class="btn" href="#feature">Sign up</a>
           </div>
@@ -75,8 +75,8 @@
 
   <!-- Banner Area Start -->
   <section id="banner-container" class="bg-custom-light-blue pt-36 pb-10">
-    <div class="container mx-auto glide wow fadeInUp">
-      <div class="glide__track" data-glide-el="track">
+    <div class="container mx-auto glide wow fadeInUp relative">
+      <div class="glide__track " data-glide-el="track">
         <div class="glide__slides">
           <div class="glide__slide banner-item w-full">
             <div class="flex flex-wrap ">
@@ -91,7 +91,7 @@
                 </div>
               </div>
               <div class="w-full lg:w-1/2">
-                <div class="banner-item-image pl-5">
+                <div class="banner-item-image pl-5 hidden lg:block">
                   <img src="assets/img/map.svg" />
                 </div>
               </div>
@@ -110,7 +110,7 @@
                 </div>
               </div>
               <div class="w-full lg:w-1/2">
-                <div class="banner-item-image pl-5">
+                <div class="banner-item-image pl-5 hidden lg:block">
                   <img src="assets/img/map.svg" />
                 </div>
               </div>
@@ -129,7 +129,7 @@
                 </div>
               </div>
               <div class="w-full lg:w-1/2">
-                <div class="banner-item-image pl-5">
+                <div class="banner-item-image pl-5 hidden lg:block">
                   <img src="assets/img/map.svg" />
                 </div>
               </div>
@@ -137,7 +137,7 @@
           </div>
         </div>
       </div>
-      <div class="glide__bullets" data-glide-el="controls[nav]">
+      <div class="glide__bullets -bottom-20 lg:bottom-0" data-glide-el="controls[nav]">
         <button class="glide__bullet" data-glide-dir="=0"></button>
         <button class="glide__bullet" data-glide-dir="=1"></button>
         <button class="glide__bullet" data-glide-dir="=2"></button>
@@ -146,7 +146,7 @@
   </section>
 
 
-  <section id="industry-container" class="bg-white pt-20 pb-48">
+  <section id="industry-container" class="bg-white pt-20 lg:pb-48">
     <div class="flex flex-wrap items-center">
       <div class="w-full">
         <div class="section-header text-center">
@@ -154,41 +154,43 @@
           </h2>
           <p>Easy-to-use SaaS software for efficient, flexible, and comprehensive gig workflow management</p>
         </div>
-        <div class="section-image ">
-          <div class="circles w-44 h-44 mx-auto mt-48 bg-custom-light-blue p-5 relative">
-            <img src="assets/img/center img.svg" />
-            <img class="w-20 h-20 rounded-full border-4 border-white absolute -bottom-28 right-14 z-0"
+        <div class="section-image sm:mt-10">
+          <div class="circles lg:w-44 lg:h-44 lg:mx-auto lg:mt-48 lg:bg-custom-light-blue p-5 lg:relative">
+            <img src="assets/img/center img.svg" class="hidden lg:block" />
+            <img
+              class="w-20 h-20 rounded-full border-4 border-white lg:absolute -bottom-28 right-14 z-0 hidden lg:block"
               src="assets/img/business.png" alt="user image" />
             <div
-              class="w-72 py-2 pl-4 text-xs rounded-lg shadow-xl border border-slate-50 bg-white absolute -bottom-32 -right-52 z-50 text-left">
+              class="lg:w-72 py-2 lg:pl-4 lg:text-xs rounded-lg lg:shadow-xl lg:border border-slate-50 bg-white lg:absolute -bottom-32 -right-52 z-50 text-left md:border-0 sm:static sm:pl-5">
               <strong class="text-custom-dark-blue">Business services</strong>
               <p class="pt-1">IT, travel, marketing, distribution & supply chain</p>
             </div>
-            <img class="w-20 h-20 rounded-full border-2 border-white absolute -top-32 right-5 z-0"
+            <img class="w-20 h-20 rounded-full border-2 border-white lg:absolute -top-32 right-5 z-0 hidden lg:block"
               src="assets/img/construction.png" alt="user image" />
             <div
-              class="w-80 py-2 pl-4 text-xs rounded-lg shadow-xl border border-slate-50 bg-white absolute -top-32 -right-72 z-50 text-left">
+              class="lg:w-80 py-2 lg:pl-4 lg:text-xs rounded-lg lg:shadow-xl lg:border border-slate-50 bg-white lg:absolute -top-32 -right-72 z-50 text-left">
               <strong class="text-custom-dark-blue">Construction</strong>
               <p class="pt-1">Civil, architecture, engineering, electrical & plumbing</p>
             </div>
-            <img class="w-14 h-14 rounded-full border-2 border-white absolute top-12 -right-24 z-0"
+            <img class="w-14 h-14 rounded-full border-2 border-white lg:absolute top-12 -right-24 z-0 hidden lg:block"
               src="assets/img/manufacturing.png" alt="user image" />
             <div
-              class="w-80 py-2 pl-4 text-xs rounded-lg shadow-xl border border-slate-50 bg-white absolute top-20 -right-96 z-50 text-left">
+              class="lg:w-80 py-2 lg:pl-4 lg:text-xs rounded-lg lg:shadow-xl lg:border border-slate-50 bg-white lg:absolute top-20 -right-96 z-50 text-left sm:shadow-0">
               <strong class="text-custom-dark-blue">Manufacturing</strong>
               <p class="pt-1">Distribution & supply chain, quality check, operations</p>
             </div>
-            <img class="w-10 h-10 rounded-full border-2 border-white absolute top-44 -left-14 z-0"
+            <img class="w-10 h-10 rounded-full border-2 border-white lg:absolute top-44 -left-14 z-0 hidden lg:block"
               src="assets/img/retail.png" alt="user image" />
             <div
-              class="w-72 py-2 pr-4 text-xs rounded-lg shadow-xl border border-slate-50 bg-white absolute top-44 right-56 z-50 text-right">
+              class="lg:w-72 py-2 lg:pr-4 lg:text-xs rounded-lg lg:shadow-xl lg:border border-slate-50 bg-white lg:absolute top-44 right-56 z-50 text-left lg:text-right">
               <strong class="text-custom-dark-blue">Retail</strong>
               <p class="pt-1">Delivery, warehouse, provisioning & supervision</p>
             </div>
-            <img class="w-16 h-16 rounded-full border-4 border-white absolute shadow-2xl top-4 -left-44 z-50"
+            <img
+              class="w-16 h-16 rounded-full border-4 border-white lg:absolute lg:shadow-2xl top-4 -left-44 z-50 hidden lg:block"
               src="assets/img/hospitality.png" alt="user image" />
             <div
-              class="w-80 py-2 pr-4 text-xs rounded-lg shadow-xl border border-slate-50 bg-white absolute -top-4 right-80 z-50 text-right">
+              class="lg:w-80 py-2 lg:pr-4 lg:text-xs rounded-lg lg:shadow-xl lg:border border-slate-50 bg-white lg:absolute -top-4 right-80 z-50 text-left lg:text-right">
               <strong class="text-custom-dark-blue">Hospitality</strong>
               <p class="pt-1">Housekeeping, accomodation, travel & IT services</p>
             </div>
@@ -206,7 +208,7 @@
       </div>
       <div class="feature-content">
         <div class="flex flex-wrap items-center">
-          <div class="w-full w-1/3 text-center mt-20 p-10">
+          <div class="w-full lg:w-1/3 text-center lg:mt-20 mt-10 lg:p-10">
             <div class="feature-icon text-center">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 inline" fill="none" viewBox="0 0 24 24"
                 stroke="#30B11B">
@@ -218,7 +220,7 @@
             <p class="text-white mt-5">Enables you to track work progress, dynamically allocate work, and automate
               payments</p>
           </div>
-          <div class="w-full w-1/3 text-center mt-20 p-10">
+          <div class="w-full lg:w-1/3 text-center lg:mt-20 mt-10 lg:p-10">
             <div class="feature-icon text-center">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 inline" fill="none" viewBox="0 0 24 24"
                 stroke="#FFAB00" fill="#FFCF6C">
@@ -230,7 +232,7 @@
             <p class="text-white mt-5">Automate all facets of contract management - from contract allocation to contract
               settlement</p>
           </div>
-          <div class="w-full w-1/3 text-center mt-20 p-10">
+          <div class="w-full lg:w-1/3 text-center lg:mt-20 mt-10 lg:p-10">
             <div class="feature-icon text-center">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 inline" fill="none" viewBox="0 0 24 24"
                 stroke="#FF0000" fill="#FFB2B2">
@@ -244,7 +246,7 @@
           </div>
         </div>
         <div class="flex flex-wrap items-center mt-2">
-          <div class="w-full w-1/3 text-center p-10">
+          <div class="w-full lg:w-1/3 text-center lg:mt-2 mt-10 lg:p-10">
             <div class="feature-icon text-center">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 inline" fill="none" viewBox="0 0 24 24"
                 stroke="#1FB7FF">
@@ -256,7 +258,7 @@
             <p class="text-white mt-5">Create multiple worker profiles, choose default profile, share and switch between
               profiles</p>
           </div>
-          <div class="w-full w-1/3 text-center p-10">
+          <div class="w-full lg:w-1/3 text-center lg:mt-2 mt-10 lg:p-10">
             <div class="feature-icon text-center">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 inline" fill="none" viewBox="0 0 24 24"
                 stroke="#FFCF0F">
@@ -268,7 +270,7 @@
             <p class="text-white mt-5">Equips gig workers with advanced work tracking and payment request tracking
               capabilities</p>
           </div>
-          <div class="w-full w-1/3 text-center p-10">
+          <div class="w-full lg:w-1/3 text-center lg:mt-2 mt-10 lg:p-10">
             <div class="feature-icon text-center">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 inline" fill="none" viewBox="0 0 24 24"
                 stroke="#A15CEF">
@@ -292,9 +294,9 @@
         <p>Android, Apple IOS & Web application</p>
       </div>
       <div class="download-content mt-10 text-center">
-        <a href="#"><img class="w-40 inline" src="assets/img/playstore.png" alt="playstore" /></a>
-        <a href="#"><img class="w-44 inline" src="assets/img/appstore.png" alt="appstore" /></a>
-        <a href="#" rel="nofollow" class="btn btn-large">
+        <a href="#"><img class="w-40 lg:inline mx-auto" src="assets/img/playstore.png" alt="playstore" /></a>
+        <a href="#"><img class="w-44 lg:inline mx-auto " src="assets/img/appstore.png" alt="appstore" /></a>
+        <a href="#" rel="nofollow" class="btn btn-large inline-block mt-2 lg:mt-0">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline" fill="none" viewBox="0 0 24 24" stroke="white">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
@@ -313,7 +315,7 @@
       </div>
       <div class="feature-content mt-10">
         <div class="flex flex-wrap items-center mt-2">
-          <div class="w-full w-1/2">
+          <div class="w-full lg:w-1/2">
             <h4 class="text-2xl font-bold">Multiple channels</h4>
             <ul class="mt-5 list-disc pl-5">
               <li class="pt-5"><strong>Omni-channel User Experience</strong> – an integrated, cohesive, and seamless
@@ -325,17 +327,17 @@
                 from the intuitive dashboard</li>
             </ul>
           </div>
-          <div class="w-full w-1/2 p-10">
+          <div class="w-full lg:w-1/2 p-10">
             <img src="assets/img/01.svg" />
           </div>
         </div>
       </div>
       <div class="feature-content mt-10">
         <div class="flex flex-wrap items-center mt-2">
-          <div class="w-full w-1/2 p-10">
+          <div class="w-full lg:w-1/2 p-10 order-2 lg:order-1">
             <img src="assets/img/02.svg" />
           </div>
-          <div class="w-full w-1/2">
+          <div class="w-full lg:w-1/2 order-1 lg:order-2">
             <h4 class="text-2xl font-bold">Security & Data Privacy</h4>
             <ul class="mt-5 list-disc pl-5">
               <li class="pt-5"><strong>Application security</strong> – an integrated, cohesive, and seamless
@@ -779,13 +781,13 @@
   <section id="footer-container" class="bg-custom-dark-black pt-20 pb-20">
     <div class="container mx-auto">
       <div class="flex flex-wrap mt-2">
-        <div class="w-full lg:w-1/2 pr-20 border-r border-grey-100">
+        <div class="w-full lg:w-1/2 pr-20 lg:border-r border-grey-100">
           <h4 class="text-2xl font-bold text-white">Ready to get started</h4>
           <p class="text-white pt-5 mb-10">To build a highly engaged gig workforce through tactical work allocation and
             real-time monitoring and reporting</p>
           <a class="btn mt-10" href="#">Contact sales</a>
         </div>
-        <div class="w-full lg:w-1/2 pl-10">
+        <div class="w-full lg:w-1/2 lg:pl-10 mt-10 lg:mt-0">
           <h4 class="text-2xl font-bold text-white">Reach us @</h4>
           <div class="flex flex-wrap mt-2">
             <div class="w-full lg:w-1/2 pr-20">

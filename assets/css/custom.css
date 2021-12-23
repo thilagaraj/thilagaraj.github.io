@@ -1,10 +1,14 @@
 .carousel-area .tns-nav button:hover, .carousel-area .tns-nav button.tns-nav-active {
   background: #fff;
 }
+.glide__track{
+  overflow: visible;
+}
 .glide__slides {
     transform: translate3d(0,0,0)!important;
     width: 100vw!important;
     min-height: 400px;
+    overflow: visible;
 }
 .glide__slide {
   opacity: 0;
@@ -35,16 +39,7 @@
   border: 0;
   box-shadow: 0ps 0px 1px #ddd;
 }
-.circles{ 
-  border-radius: 50%;
-  box-shadow: 0px 0px 0px 20px #fff,
-  0px 0px 0px 21px #F2F8FA,
-  0px 0px 0px 80px #fff,
-  0px 0px 0px 81px #F2F8FA,
-  0px 0px 0px 140px #fff,
-  0px 0px 0px 141px #F2F8FA;
- 
-}
+
 .ribbon {
   position: absolute;
   left: -5px; top: -5px;
@@ -93,4 +88,14 @@
   background-position: 5% 15%;
   background-size: 10%;
 }
-/*# sourceMappingURL=main.css.map */
+@media (min-width: 1024px){
+  .circles{ 
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 20px #fff,
+    0px 0px 0px 21px #F2F8FA,
+    0px 0px 0px 80px #fff,
+    0px 0px 0px 81px #F2F8FA,
+    0px 0px 0px 140px #fff,
+    0px 0px 0px 141px #F2F8FA;   
+  }
+}

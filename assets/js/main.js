@@ -65,27 +65,32 @@
 
       window.document.addEventListener('scroll', onScroll);
 
-
+     
       //===== close navbar-collapse when a  clicked
       let navbarToggler = document.querySelector(".navbar-toggler");
       var navbarCollapse = document.querySelector(".navbar-collapse");
+      var headerBtn = document.querySelector(".header-btn");
 
       document.querySelectorAll(".page-scroll").forEach(e =>
         e.addEventListener("click", () => {
           navbarToggler.classList.remove("active");
-          navbarCollapse.classList.remove('show')
+          navbarCollapse.classList.remove('show');
+          headerBtn.classList.remove('show')
         })
       );
       navbarToggler.addEventListener('click', function () {
         navbarToggler.classList.toggle("active");
-        navbarCollapse.classList.toggle('show')
+        navbarCollapse.classList.toggle('show');
+        headerBtn.classList.toggle('show');
       })
 
 
     //======== tiny slider for testimonial
     new Glide('.glide',{
       autoplay: 3000,
-    }).mount()
+    }).mount();
+
+    
     
 
       //WOW Scroll Spy
