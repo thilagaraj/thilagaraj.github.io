@@ -145,7 +145,7 @@ p {
   @apply text-white;
 }
 .btn {
-  @apply px-4 py-2 border border-custom-red rounded-lg text-white bg-custom-red hover:bg-white hover:border hover:border-custom-red hover:text-custom-red lg:mr-2;
+  @apply lg:px-4 px-5 py-2 border border-custom-red rounded-lg text-white bg-custom-red hover:bg-white hover:border hover:border-custom-red hover:text-custom-red lg:mr-2;
 }
 .btn-plain {
   @apply bg-white border border-custom-red hover:bg-custom-red text-custom-red hover:text-white;
