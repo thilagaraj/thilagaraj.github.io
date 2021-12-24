@@ -3,11 +3,14 @@
 }
 .glide__track{
   overflow: visible;
+  min-height: 500px;
 }
+
+
 .glide__slides {
     transform: translate3d(0,0,0)!important;
     width: 100%!important;
-    min-height: 400px;
+    height: auto;
     overflow: visible;
 }
 .glide__slide {
@@ -17,7 +20,7 @@
   top: 0;
   left: 0;
   transition: opacity .5s ease;
-  min-height: 400px;
+  height: auto;
   cursor: default;
 }
 
@@ -97,5 +100,8 @@
     0px 0px 0px 81px #F2F8FA,
     0px 0px 0px 140px #fff,
     0px 0px 0px 141px #F2F8FA;   
+  }
+  .glide__track{
+    min-height: auto;
   }
 }

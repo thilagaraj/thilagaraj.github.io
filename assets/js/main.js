@@ -14,22 +14,7 @@
       // }
 
 
-      /*=====================================
-      Sticky
-      ======================================= */
-      window.onscroll = function () {
-        var header_navbar = document.querySelector(".navigation");
-        // show or hide the back-top-top button
-        var backToTop = document.querySelector(".back-to-top");
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-          backToTop.style.display = "flex";
-        } else {
-          backToTop.style.display = "none";
-        }
-      };
-
-      // Get the navbar
-
+     
 
       // for menu scroll 
       var pageLink = document.querySelectorAll('.page-scroll');
@@ -83,15 +68,34 @@
         navbarCollapse.classList.toggle('show');
         headerBtn.classList.toggle('show');
       })
+      function normaliseSlideHeight(selector) {
+        const slides = document.querySelectorAll(selector);
+        const slideHeights = [];      
+        slides.forEach((slide) => slideHeights.push(slide.scrollHeight));      
+        const tallestSlideHeight = Math.max(...slideHeights);    
+        $('.glide__track').css('height', tallestSlideHeight+50);  
+      }
+
+      var glide = new Glide('.glide',{
+        autoplay: 3000,
+        autoheight: true,
+      });
+
+    glide.on(['run.after', 'build.after'], function() {
+      var slideHeight = $('.glide__slide--active').outerHeight();
+      var glideTrack = $('.glide__track').outerHeight();
+      if (slideHeight != glideTrack) {
+        var newHeight = slideHeight;
+        $('.glide__track').css('height', newHeight);
+      }
+    });
+
+    glide.on(['mount.after'], function() {
+      normaliseSlideHeight('.glide__slide');
+    });
 
 
-    //======== tiny slider for testimonial
-    new Glide('.glide',{
-      autoplay: 3000,
-    }).mount();
-
-    
-    
+    glide.mount();
 
       //WOW Scroll Spy
       var wow = new WOW({
