@@ -1482,8 +1482,8 @@ p{
   border-color: rgb(255 31 57 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(255 31 57 / var(--tw-bg-opacity));
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   --tw-text-opacity: 1;
@@ -1502,6 +1502,11 @@ p{
 
   .btn{
     margin-right: 0.5rem;
+  }
+
+  .btn{
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 .btn-plain{
@@ -1834,6 +1839,11 @@ p{
   .lg\:px-5{
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+
+  .lg\:px-4{
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .lg\:py-2\.5{
