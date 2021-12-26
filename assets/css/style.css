@@ -735,6 +735,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 2.5rem;
 }
 
+.w-11\/12{
+  width: 91.666667%;
+}
+
 .w-12{
   width: 3rem;
 }
@@ -767,16 +771,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 0.75rem;
 }
 
-.w-96{
-  width: 24rem;
-}
-
-.w-4\/5{
-  width: 80%;
-}
-
-.w-11\/12{
-  width: 91.666667%;
+.w-44{
+  width: 11rem;
 }
 
 .transform{
@@ -898,11 +894,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
 
-.bg-gray-700{
-  --tw-bg-opacity: 1;
-  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
-}
-
 .bg-gray-200{
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
@@ -991,10 +982,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1.25rem;
 }
 
-.pt-5{
-  padding-top: 1.25rem;
-}
-
 .pt-1{
   padding-top: 0.25rem;
 }
@@ -1005,6 +992,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pl-5{
   padding-left: 1.25rem;
+}
+
+.pt-5{
+  padding-top: 1.25rem;
 }
 
 .pb-2{
@@ -1221,7 +1212,7 @@ p{
   position: relative;
   display: block;
   --tw-bg-opacity: 1;
-  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   transition-duration: 300ms;
   height: 2px;
   width: 30px;
@@ -1737,24 +1728,12 @@ p{
     margin-top: 2.5rem;
   }
 
-  .lg\:mt-20{
-    margin-top: 5rem;
-  }
-
-  .lg\:mt-2{
-    margin-top: 0.5rem;
-  }
-
   .lg\:mr-3{
     margin-right: 0.75rem;
   }
 
   .lg\:mb-0{
     margin-bottom: 0px;
-  }
-
-  .lg\:mt-5{
-    margin-top: 1.25rem;
   }
 
   .lg\:block{
@@ -1893,12 +1872,16 @@ p{
     padding-bottom: 0.75rem;
   }
 
-  .lg\:pl-5{
-    padding-left: 1.25rem;
+  .lg\:pl-12{
+    padding-left: 3rem;
   }
 
   .lg\:pr-5{
     padding-right: 1.25rem;
+  }
+
+  .lg\:pl-5{
+    padding-left: 1.25rem;
   }
 
   .lg\:pb-48{
@@ -1915,10 +1898,6 @@ p{
 
   .lg\:pl-10{
     padding-left: 2.5rem;
-  }
-
-  .lg\:pl-12{
-    padding-left: 3rem;
   }
 
   .lg\:text-left{

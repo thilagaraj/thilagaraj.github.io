@@ -14,7 +14,7 @@
     width: 100%!important;
     height: auto;
     z-index: 50;
-    min-height: 650px;
+    min-height: 780px;
     overflow: visible;
 }
 .__slide {
@@ -27,9 +27,7 @@
   height: auto;
   cursor: default;  
 }
-.__slide:first-child {
-  opacity: 1;
-}
+
 
 .glide__bullet{
   width: 30px;
@@ -107,5 +105,8 @@
     0px 0px 0px 81px #F2F8FA,
     0px 0px 0px 140px #fff,
     0px 0px 0px 141px #F2F8FA;   
+  }
+  .__slides {
+    min-height:650px;
   }
 }

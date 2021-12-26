@@ -28,7 +28,7 @@ p {
   @apply block;
 }
 .toggler-icon {
-  @apply block bg-gray-700 relative duration-300;
+  @apply block bg-white relative duration-300;
   height: 2px;
   width: 30px;
   margin: 6px 0;

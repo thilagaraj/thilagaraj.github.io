@@ -71,7 +71,7 @@
       
       var slides = document.querySelectorAll('.glides > div');
 
-      var slideIndex = 1;
+var slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
@@ -96,7 +96,6 @@ function showSlides() {
   setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
 
-showSlides();
 
       //WOW Scroll Spy
       var wow = new WOW({
