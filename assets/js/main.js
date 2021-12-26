@@ -69,14 +69,23 @@
         headerBtn.classList.toggle('show');
       })
       
-      var slides = document.querySelector('.glides > div');
+      var slides = document.querySelectorAll('.glides > div');
 
-      setInterval(function() {
-        //Array.prototype.forEach.call(slides, function(slide) {
-          
-        //}, 1000);
-      });
+      var slideIndex = 1;
 
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("__slide");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.opacity = 0;
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.opacity = 1;
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+
+showSlides();
 
       //WOW Scroll Spy
       var wow = new WOW({
