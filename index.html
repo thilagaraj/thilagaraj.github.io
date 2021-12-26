@@ -15,9 +15,6 @@
   <link rel="stylesheet" type="text/css" href="assets/css/LineIcons.2.0.css">
   <!-- Animate -->
   <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-  <!-- Glide Slider  -->
-  <link rel="stylesheet" type="text/css" href="assets/css/glide.core.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/glide.theme.min.css">
   <!-- Tailwind css -->
   <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -26,18 +23,18 @@
 <body>
 
   <!-- Header Area wrapper Starts -->
-  <header id="header-wrap" class="relative bg-custom-light-blue">
+  <header id="header-wrap" class="relative bg-custom-dark-black">
     <!-- Navbar Start -->
     <div class="navigation w-full z-30 duration-300">
       <div class="container mx-auto">
         <nav
-          class="navbar py-6 px-10 navbar-expand-lg lg:flex justify-between items-center relative duration-300 bg-white rounded-xl top-5 shadow">
+          class="navbar py-6 px-10 navbar-expand-lg lg:flex justify-between items-center relative duration-300 bg-custom-dark-black rounded-xl top-5">
           <a class="navbar-brand" href="index.html">
-            <img src="assets/img/logo.png" class="relative -top-1.5 w-32" alt="Logo">
+            <img src="assets/img/logo-black.png" class="relative -top-1.5 w-40" alt="Logo">
           </a>
-          <button class="navbar-toggler focus:outline-none inline-block w-10 lg:hidden lg:static absolute right-2 top-6" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
+          <button class="navbar-toggler focus:outline-none inline-block w-10 lg:hidden lg:static absolute right-2 top-6"
+            type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="toggler-icon"></span>
             <span class="toggler-icon"></span>
             <span class="toggler-icon"></span>
@@ -63,8 +60,8 @@
             </ul>
           </div>
           <div class="collapse header-btn hidden lg:block md:mr-16 lg:static lg:mr-0 mt-5 lg:mt-0">
-            <a class="btn btn-plain" href="#feature">Log in</a>
-            <a class="btn" href="#feature">Sign up</a>
+            <a class="btn btn-plain btn-large" href="#feature">Log in</a>
+            <a class="btn btn-large border-0" href="#feature">Sign up</a>
           </div>
         </nav>
       </div>
@@ -74,74 +71,78 @@
   <!-- Header Area wrapper End -->
 
   <!-- Banner Area Start -->
-  <section id="banner-container" class="bg-custom-light-blue lg:pt-36 pt-20 pb-10">
-    <div class="container mx-auto glide wow fadeInUp relative">
-      <div class="glide__track " data-glide-el="track">
-        <div class="glide__slides">
-          <div class="glide__slide banner-item w-full">
-            <div class="flex flex-wrap ">
-              <div class="w-full lg:w-1/2 lg:order-1 order-2">
-                <div class="banner-item-content pr-5 text-center lg:text-left mt-5 lg:mt-0">
-                  <h2 class="text-3xl font-bold leading-snug text-custom-black mb-5" data-wow-delay="1s">Strategic
-                    workflow management solution for gig workforce</h2>
-                  <p class="py-5 block lg:w-9/12 mb-5 leading-loose">Build a highly engaged gig workforce through tactical
-                    work allocation and real-time monitoring and reporting</p>
-                  <a href="#pricing" rel="nofollow" class="btn">Free trials</a>
-                  <a href="javascript:void(Tawk_API.toggle())" rel="nofollow" class="btn btn-plain">Contact sales</a>
-                </div>
+  <section id="banner-container" class="bg-custom-dark-black lg:pt-30 pt-20 pb-10 relative">
+    <div class="container mx-auto relative ">
+      <div class="__slides">
+        <div class="__slide banner-item w-full  px-10">
+          <div class="flex flex-wrap ">
+            <div class="w-full lg:w-1/2 lg:order-1 order-2">
+              <div class="banner-item-content pr-5 text-center lg:text-left mt-5 lg:mt-0">
+                <h2 class="text-5xl font-bold leading-snug text-white mb-5" data-wow-delay="1s">Strategic
+                  workflow management solution for gig workforce</h2>
+                <p class="py-5 block lg:w-9/12 mb-5 leading-loose text-white">Build a highly engaged gig workforce
+                  through tactical
+                  work allocation and real-time monitoring and reporting</p>
+                <a href="#pricing" rel="nofollow" class="btn btn-xlarge">Free trials</a>
+                <a href="javascript:void(Tawk_API.toggle())" rel="nofollow" class="btn btn-plain btn-xlarge">Contact
+                  sales</a>
               </div>
-              <div class="w-full lg:w-1/2 lg:order-2 order-1">
-                <div class="banner-item-image lg:pl-5 text-center lg:text-left">
-                  <img src="assets/img/map.svg" />
-                </div>
+            </div>
+            <div class="w-full lg:w-1/2 lg:order-2 order-1">
+              <div class="banner-item-image lg:pl-5 text-center lg:text-left">
+                <img src="assets/img/map.svg" />
               </div>
             </div>
           </div>
-          <div class="glide__slide banner-item w-full">
-            <div class="flex flex-wrap ">
-              <div class="w-full lg:w-1/2 lg:order-1 order-2">
-                <div class="banner-item-content lg:pr-5 text-center lg:text-left">
-                  <h2 class="text-3xl font-bold leading-snug text-custom-black mb-5 mt-5 lg:mt-0" data-wow-delay="1s">Comprehensive
-                    contract management for distributed gig workforce</h2>
-                  <p class="py-5 block lg:w-9/12 mb-5 leading-loose">Complete contract management – from signing to
-                    payments to closure for geographically distributed gig workforce</p>
-                  <a href="#pricing" rel="nofollow" class="btn">Free trials</a>
-                  <a href="javascript:void(Tawk_API.toggle())" rel="nofollow" class="btn btn-plain">Contact sales</a>
-                </div>
+        </div>
+        <div class="__slide banner-item w-full  px-10">
+          <div class="flex flex-wrap ">
+            <div class="w-full lg:w-1/2 lg:order-1 order-2">
+              <div class="banner-item-content lg:pr-5 text-center lg:text-left">
+                <h2 class="text-3xl font-bold leading-snug text-custom-black mb-5 mt-5 lg:mt-0 text-white"
+                  data-wow-delay="1s">Comprehensive
+                  contract management for distributed gig workforce</h2>
+                <p class="py-5 block lg:w-9/12 mb-5 leading-loose text-white">Complete contract management – from
+                  signing to
+                  payments to closure for geographically distributed gig workforce</p>
+                <a href="#pricing" rel="nofollow" class="btn btn-xlarge">Free trials</a>
+                <a href="javascript:void(Tawk_API.toggle())" rel="nofollow" class="btn btn-plain btn-xlarge">Contact
+                  sales</a>
               </div>
-              <div class="w-full lg:w-1/2 lg:order-2 order-1">
-                <div class="banner-item-image lg:pl-5 text-center lg:text-left">
-                  <img src="assets/img/map.svg" />
-                </div>
+            </div>
+            <div class="w-full lg:w-1/2 lg:order-2 order-1">
+              <div class="banner-item-image lg:pl-5 text-center lg:text-left">
+                <img src="assets/img/map.svg" />
               </div>
             </div>
           </div>
-          <div class="glide__slide banner-item w-full">
-            <div class="flex flex-wrap ">
-              <div class="w-full lg:w-1/2 lg:order-1 order-2">
-                <div class="banner-item-content lg:pr-5 text-center lg:text-left mt-5 lg:mt-0">
-                  <h2 class="text-3xl font-bold leading-snug text-custom-black mb-5" data-wow-delay="1s">Get Empowered
-                    with the digital hawk eye on your gig workforce</h2>
-                  <p class="py-5 block lg:w-9/12 mb-5 leading-loose">Get real-time updates on worker location, log time,
-                    and work status from intuitive, interactive dashboards</p>
-                  <a href="#pricing" rel="nofollow" class="btn">Free trials</a>
-                  <a href="javascript:void(Tawk_API.toggle())" rel="nofollow" class="btn btn-plain">Contact sales</a>
-                </div>
+        </div>
+        <div class="__slide banner-item w-full  px-10">
+          <div class="flex flex-wrap ">
+            <div class="w-full lg:w-1/2 lg:order-1 order-2">
+              <div class="banner-item-content lg:pr-5 text-center lg:text-left mt-5 lg:mt-0">
+                <h2 class="text-3xl font-bold leading-snug text-custom-black mb-5 text-white" data-wow-delay="1s">Get
+                  Empowered
+                  with the digital hawk eye on your gig workforce</h2>
+                <p class="py-5 block lg:w-9/12 mb-5 leading-loose text-white">Get real-time updates on worker location,
+                  log time,
+                  and work status from intuitive, interactive dashboards</p>
+                <a href="#pricing" rel="nofollow" class="btn btn-xlarge">Free trials</a>
+                <a href="javascript:void(Tawk_API.toggle())" rel="nofollow" class="btn btn-plain btn-xlarge">Contact
+                  sales</a>
               </div>
-              <div class="w-full lg:w-1/2 lg:order-2 order-1">
-                <div class="banner-item-image lg:pl-5 text-center lg:text-left">
-                  <img src="assets/img/map.svg" />
-                </div>
+            </div>
+            <div class="w-full lg:w-1/2 lg:order-2 order-1">
+              <div class="banner-item-image lg:pl-5 text-center lg:text-left">
+                <img src="assets/img/map.svg" />
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="glide__bullets -bottom-20 lg:bottom-0" data-glide-el="controls[nav]">
-        <button class="glide__bullet" data-glide-dir="=0"></button>
-        <button class="glide__bullet" data-glide-dir="=1"></button>
-        <button class="glide__bullet" data-glide-dir="=2"></button>
-      </div>
+    </div>
+    <div class="bottom-img-absolute">
+      <img src="assets/img/hero-bg-shape-1.svg" alt="wave shape" class="img-fluid">
     </div>
   </section>
 
@@ -157,29 +158,31 @@
         <div class="section-image sm:mt-10">
           <div class="circles lg:w-44 lg:h-44 lg:mx-auto lg:mt-48 lg:bg-custom-light-blue p-5 lg:relative">
             <img src="assets/img/center img.svg" class="hidden lg:block" />
-            <img
-              class="lg:w-20 lg:h-20 rounded-full border-4 border-white lg:absolute -bottom-28 right-14 z-0 mx-auto"
+            <img class="lg:w-20 lg:h-20 rounded-full border-4 border-white lg:absolute -bottom-28 right-14 z-0 mx-auto"
               src="assets/img/business.png" alt="user image" />
             <div
               class="lg:w-72 py-2 lg:pl-4 lg:text-xs rounded-lg lg:shadow-xl lg:border border-slate-50 bg-white lg:absolute -bottom-32 -right-52 z-50 lg:text-left text-center md:border-0 sm:static sm:pl-5">
               <strong class="text-custom-dark-blue">Business services</strong>
               <p class="pt-1">IT, travel, marketing, distribution & supply chain</p>
             </div>
-            <img class="lg:w-20 lg:h-20 rounded-full border-2 border-white lg:absolute -top-32 right-5 z-0 mx-auto mt-5 lg:mt-0"
+            <img
+              class="lg:w-20 lg:h-20 rounded-full border-2 border-white lg:absolute -top-32 right-5 z-0 mx-auto mt-5 lg:mt-0"
               src="assets/img/construction.png" alt="user image" />
             <div
               class="lg:w-80 py-2 lg:pl-4 lg:text-xs rounded-lg lg:shadow-xl lg:border border-slate-50 bg-white lg:absolute -top-32 -right-72 z-50 lg:text-left text-center">
               <strong class="text-custom-dark-blue">Construction</strong>
               <p class="pt-1">Civil, architecture, engineering, electrical & plumbing</p>
             </div>
-            <img class="lg:w-14 lg:h-14 rounded-full border-2 border-white lg:absolute top-12 -right-24 z-0 mx-auto mt-5 lg:mt-0"
+            <img
+              class="lg:w-14 lg:h-14 rounded-full border-2 border-white lg:absolute top-12 -right-24 z-0 mx-auto mt-5 lg:mt-0"
               src="assets/img/manufacturing.png" alt="user image" />
             <div
               class="lg:w-80 py-2 lg:pl-4 lg:text-xs rounded-lg lg:shadow-xl lg:border border-slate-50 bg-white lg:absolute top-20 -right-96 z-50 lg:text-left text-center sm:shadow-0">
               <strong class="text-custom-dark-blue">Manufacturing</strong>
               <p class="pt-1">Distribution & supply chain, quality check, operations</p>
             </div>
-            <img class="lg:w-10 lg:h-10 rounded-full border-2 border-white lg:absolute top-44 -left-14 z-0 mx-auto mt-5 lg:mt-0"
+            <img
+              class="lg:w-10 lg:h-10 rounded-full border-2 border-white lg:absolute top-44 -left-14 z-0 mx-auto mt-5 lg:mt-0"
               src="assets/img/retail.png" alt="user image" />
             <div
               class="lg:w-72 py-2 lg:pr-4 lg:text-xs rounded-lg lg:shadow-xl lg:border border-slate-50 bg-white lg:absolute top-44 right-56 z-50 text-center lg:text-right">
@@ -201,9 +204,9 @@
   </section>
 
   <section id="features" class="bg-custom-dark-black pt-20 pb-20">
-    <div class="container mx-auto">
+    <div class="container mx-auto text-white">
       <div class="feature-header text-center">
-        <h2 class="text-3xl font-bold leading-snug text-white mb-2" data-wow-delay="1s">Product features</h2>
+        <h2 class="text-3xl font-bold leading-snug mb-2 " data-wow-delay="1s">Product features</h2>
         <p class="text-white">faster, efficient, and strategic gig workflow management</p>
       </div>
       <div class="feature-content">
@@ -216,8 +219,8 @@
                   d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z" />
               </svg>
             </div>
-            <h4 class="font-bold text-white mt-5">Complete workflow management</h4>
-            <p class="text-white mt-5">Enables you to track work progress, dynamically allocate work, and automate
+            <h4 class="font-bold mt-5">Complete workflow management</h4>
+            <p class="mt-5 text-white">Enables you to track work progress, dynamically allocate work, and automate
               payments</p>
           </div>
           <div class="w-full lg:w-1/3 md:w-1/3 text-center lg:mt-20 mt-10 lg:p-10 md:p-10">
@@ -228,8 +231,8 @@
                   d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
               </svg>
             </div>
-            <h4 class="font-bold text-white mt-5">End-to-end contract management</h4>
-            <p class="text-white mt-5">Automate all facets of contract management - from contract allocation to contract
+            <h4 class="font-bold mt-5">End-to-end contract management</h4>
+            <p class="mt-5 text-white">Automate all facets of contract management - from contract allocation to contract
               settlement</p>
           </div>
           <div class="w-full lg:w-1/3 md:w-1/3 text-center lg:mt-20 mt-10 lg:p-10 md:p-10">
@@ -240,8 +243,8 @@
                   d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
               </svg>
             </div>
-            <h4 class="font-bold text-white mt-5">Reports and Analytics</h4>
-            <p class="text-white mt-5">Get instant reports and analytics on worker timing, work status, payments, and
+            <h4 class="font-bold mt-5">Reports and Analytics</h4>
+            <p class="mt-5 text-white">Get instant reports and analytics on worker timing, work status, payments, and
               contract thro email</p>
           </div>
         </div>
@@ -254,8 +257,8 @@
                   d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
               </svg>
             </div>
-            <h4 class="font-bold text-white mt-5">Flexible profile management</h4>
-            <p class="text-white mt-5">Create multiple worker profiles, choose default profile, share and switch between
+            <h4 class="font-bold mt-5">Flexible profile management</h4>
+            <p class="mt-5 text-white">Create multiple worker profiles, choose default profile, share and switch between
               profiles</p>
           </div>
           <div class="w-full lg:w-1/3 md:w-1/3 text-center lg:mt-2 mt-10 lg:p-10 md:p-10">
@@ -266,8 +269,8 @@
                   d="M20.618 5.984A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016zM12 9v2m0 4h.01" />
               </svg>
             </div>
-            <h4 class="font-bold text-white mt-5">Intuitive workflow management</h4>
-            <p class="text-white mt-5">Equips gig workers with advanced work tracking and payment request tracking
+            <h4 class="font-bold mt-5">Intuitive workflow management</h4>
+            <p class="mt-5 text-white">Equips gig workers with advanced work tracking and payment request tracking
               capabilities</p>
           </div>
           <div class="w-full lg:w-1/3 md:w-1/3 text-center lg:mt-2 mt-10 lg:p-10 md:p-10">
@@ -278,8 +281,8 @@
                   d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
-            <h4 class="font-bold text-white mt-5">Simple request log</h4>
-            <p class="text-white mt-5">Simplifies leave request, work re-allocation request, customized time entries,
+            <h4 class="font-bold mt-5">Simple request log</h4>
+            <p class="mt-5 text-white">Simplifies leave request, work re-allocation request, customized time entries,
               notifications and approvals</p>
           </div>
         </div>
@@ -294,8 +297,10 @@
         <p>Android, Apple IOS & Web application</p>
       </div>
       <div class="download-content mt-10 text-center">
-        <a href="#"><img class="w-52 lg:w-40 md:w-44 lg:inline md:inline mx-auto" src="assets/img/playstore.png" alt="playstore" /></a>
-        <a href="#"><img class="w-56 lg:w-44 md:w-48 lg:inline md:inline mx-auto lg:mr-3 md:mr-3" src="assets/img/appstore.png" alt="appstore" /></a>
+        <a href="#"><img class="w-52 lg:w-40 md:w-44 lg:inline md:inline mx-auto" src="assets/img/playstore.png"
+            alt="playstore" /></a>
+        <a href="#"><img class="w-56 lg:w-44 md:w-48 lg:inline md:inline mx-auto lg:mr-3 md:mr-3"
+            src="assets/img/appstore.png" alt="appstore" /></a>
         <a href="#" rel="nofollow" class="btn btn-large inline-block mt-2 lg:mt-0">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline" fill="none" viewBox="0 0 24 24" stroke="white">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -307,7 +312,7 @@
   </section>
 
 
-  <section id="design-features-container" class="bg-custom-light-blue pt-20 pb-20">
+  <section id="design-features-container" class="bg-white pt-20 pb-20">
     <div class="container mx-auto">
       <div class="feature-header text-center">
         <h2 class="text-3xl font-bold leading-snug mb-2 text-custom-black" data-wow-delay="1s">Design features</h2>
@@ -783,7 +788,8 @@
       <div class="flex flex-wrap mt-2">
         <div class="w-full lg:w-1/2 md:w-1/2 pr-20 lg:border-r border-grey-100">
           <h4 class="text-2xl font-bold text-white">Ready to get started</h4>
-          <p class="text-white pt-5 mb-10">To build a highly engaged gig workforce through tactical work allocation and real-time monitoring and reporting</p>
+          <p class="text-white pt-5 mb-10">To build a highly engaged gig workforce through tactical work allocation and
+            real-time monitoring and reporting</p>
           <a class="btn mt-10" href="javascript:void(Tawk_API.toggle())">Contact sales</a>
         </div>
         <div class="w-full lg:w-1/2 md:w-1/2 lg:pl-10  mt-10 md:mt-0 lg:mt-0">
@@ -864,12 +870,7 @@
   <!-- End Preloader -->
 
   <!-- All js Here -->
-  <script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"></script>
   <script src="assets/js/wow.js"></script>
-  <script src="assets/js/glide.js"></script>
   <script src="assets/js/contact-form.js"></script>
   <script src="assets/js/main.js"></script>
   <!--Start of Tawk.to Script-->

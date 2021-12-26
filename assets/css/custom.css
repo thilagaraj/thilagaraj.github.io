@@ -6,27 +6,29 @@
   min-height: 500px;
 }
 
+.glide {
+  z-index: 100;
+}
 
-.glide__slides {
-    transform: translate3d(0,0,0)!important;
+.__slides {    
     width: 100%!important;
     height: auto;
+    z-index: 50;
+    min-height: 650px;
     overflow: visible;
 }
-.glide__slide {
+.__slide {
   opacity: 0;
-  z-index: 0;
+  z-index: 50;
   position: absolute;
   top: 0;
   left: 0;
   transition: opacity .5s ease;
   height: auto;
-  cursor: default;
+  cursor: default;  
 }
-
-.glide__slide.glide__slide--active {
+.__slide:first-child {
   opacity: 1;
-  z-index: 1;
 }
 
 .glide__bullet{
@@ -88,8 +90,13 @@
 #banner-container {
   background-image: url('../img/dotted.png');
   background-repeat: no-repeat;
-  background-position: 5% 15%;
-  background-size: 10%;
+  background-position: 7% 15%;
+  background-size: 10%;  
+}
+.bottom-img-absolute {
+  bottom: 0;
+  width: 100%;
+  position: absolute;  
 }
 @media (min-width: 1024px){
   .circles{ 
@@ -100,8 +107,5 @@
     0px 0px 0px 81px #F2F8FA,
     0px 0px 0px 140px #fff,
     0px 0px 0px 141px #F2F8FA;   
-  }
-  .glide__track{
-    min-height: auto;
   }
 }

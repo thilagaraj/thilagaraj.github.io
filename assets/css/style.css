@@ -479,10 +479,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 1.5rem;
 }
 
-.-bottom-20{
-  bottom: -5rem;
-}
-
 .-bottom-28{
   bottom: -7rem;
 }
@@ -731,8 +727,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
-.w-32{
-  width: 8rem;
+.w-40{
+  width: 10rem;
 }
 
 .w-10{
@@ -811,6 +807,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.25rem;
 }
 
+.border-0{
+  border-width: 0px;
+}
+
 .border-4{
   border-width: 4px;
 }
@@ -861,9 +861,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(235 0 27 / var(--tw-border-opacity));
 }
 
-.bg-custom-light-blue{
+.bg-custom-dark-black{
   --tw-bg-opacity: 1;
-  background-color: rgb(242 248 250 / var(--tw-bg-opacity));
+  background-color: rgb(34 48 70 / var(--tw-bg-opacity));
 }
 
 .bg-white{
@@ -871,9 +871,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-custom-dark-black{
+.bg-custom-light-blue{
   --tw-bg-opacity: 1;
-  background-color: rgb(34 48 70 / var(--tw-bg-opacity));
+  background-color: rgb(242 248 250 / var(--tw-bg-opacity));
 }
 
 .bg-custom-light-red{
@@ -1027,6 +1027,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: Gilroy-Medium, sans-serif;
 }
 
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -1089,6 +1094,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.25rem;
 }
 
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .text-custom-black{
   --tw-text-opacity: 1;
   color: rgb(31 45 62 / var(--tw-text-opacity));
@@ -1097,11 +1107,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-custom-dark-blue{
   --tw-text-opacity: 1;
   color: rgb(0 82 204 / var(--tw-text-opacity));
-}
-
-.text-white{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-gray-900{
@@ -1165,8 +1170,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 body{
   font-family: Gilroy-Medium, sans-serif;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 p{
   --tw-text-opacity: 1;
@@ -1232,7 +1237,7 @@ p{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
   transition-duration: 300ms;
 }
 @media (min-width: 1024px){
@@ -1477,7 +1482,7 @@ p{
 }
 .btn{
   border-radius: 0.5rem;
-  border-width: 1px;
+  border-width: 0px;
   --tw-border-opacity: 1;
   border-color: rgb(255 31 57 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
@@ -1510,7 +1515,7 @@ p{
   }
 }
 .btn-plain{
-  border-width: 1px;
+  border-width: 0px;
   --tw-border-opacity: 1;
   border-color: rgb(255 31 57 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
@@ -1569,51 +1574,59 @@ p{
     padding-bottom: 0.625rem;
   }
 }
+.btn-xlarge{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+@media (min-width: 1024px){
 
+  .btn-xlarge{
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+  }
+
+  .btn-xlarge{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
 .hover\:border:hover{
   border-width: 1px;
 }
-
 .hover\:border-custom-red:hover{
   --tw-border-opacity: 1;
   border-color: rgb(255 31 57 / var(--tw-border-opacity));
 }
-
 .hover\:border-custom-dark-blue:hover{
   --tw-border-opacity: 1;
   border-color: rgb(0 82 204 / var(--tw-border-opacity));
 }
-
 .hover\:border-custom-dark-red:hover{
   --tw-border-opacity: 1;
   border-color: rgb(235 0 27 / var(--tw-border-opacity));
 }
-
 .hover\:bg-white:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-
 .hover\:bg-custom-red:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(255 31 57 / var(--tw-bg-opacity));
 }
-
 .hover\:text-gray-500:hover{
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
-
 .hover\:text-custom-red:hover{
   --tw-text-opacity: 1;
   color: rgb(255 31 57 / var(--tw-text-opacity));
 }
-
 .focus\:outline-none:focus{
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
-
 @media (min-width: 640px){
 
   .sm\:static{
@@ -1628,7 +1641,6 @@ p{
     padding-left: 1.25rem;
   }
 }
-
 @media (min-width: 768px){
 
   .md\:mr-16{
@@ -1675,7 +1687,6 @@ p{
     padding: 2.5rem;
   }
 }
-
 @media (min-width: 1024px){
 
   .lg\:static{
@@ -1688,10 +1699,6 @@ p{
 
   .lg\:relative{
     position: relative;
-  }
-
-  .lg\:bottom-0{
-    bottom: 0px;
   }
 
   .lg\:order-1{
@@ -1856,8 +1863,14 @@ p{
     padding-bottom: 0.5rem;
   }
 
-  .lg\:pt-36{
-    padding-top: 9rem;
+  .lg\:py-3\.5{
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+  }
+
+  .lg\:py-3{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
   }
 
   .lg\:pl-5{

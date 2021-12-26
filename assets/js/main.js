@@ -68,34 +68,15 @@
         navbarCollapse.classList.toggle('show');
         headerBtn.classList.toggle('show');
       })
-      function normaliseSlideHeight(selector) {
-        const slides = document.querySelectorAll(selector);
-        const slideHeights = [];      
-        slides.forEach((slide) => slideHeights.push(slide.scrollHeight));      
-        const tallestSlideHeight = Math.max(...slideHeights);    
-        $('.glide__track').css('height', tallestSlideHeight+50);  
-      }
+      
+      var slides = document.querySelector('.glides > div');
 
-      var glide = new Glide('.glide',{
-        autoplay: 3000,
-        autoheight: true,
+      setInterval(function() {
+        //Array.prototype.forEach.call(slides, function(slide) {
+          
+        //}, 1000);
       });
 
-    glide.on(['run.after', 'build.after'], function() {
-      var slideHeight = $('.glide__slide--active').outerHeight();
-      var glideTrack = $('.glide__track').outerHeight();
-      if (slideHeight != glideTrack) {
-        var newHeight = slideHeight;
-        $('.glide__track').css('height', newHeight);
-      }
-    });
-
-    glide.on(['mount.after'], function() {
-      normaliseSlideHeight('.glide__slide');
-    });
-
-
-    glide.mount();
 
       //WOW Scroll Spy
       var wow = new WOW({
