@@ -1,5 +1,5 @@
 
-@import url('http://fonts.cdnfonts.com/css/gilroy-bold');
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
 
 /*
 ! tailwindcss v3.0.7 | MIT License | https://tailwindcss.com
@@ -727,8 +727,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
-.w-40{
-  width: 10rem;
+.w-44{
+  width: 11rem;
 }
 
 .w-10{
@@ -769,10 +769,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-3{
   width: 0.75rem;
-}
-
-.w-44{
-  width: 11rem;
 }
 
 .transform{
