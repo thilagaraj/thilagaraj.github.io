@@ -90,11 +90,11 @@
 #banner-container {
   background-image: url('../img/dotted.png');
   background-repeat: no-repeat;
-  background-position: 7% 15%;
-  background-size: 10%;  
+  background-position: 8% 6%;
+  background-size: 10%; 
 }
 .bottom-img-absolute {
-  bottom: 0;
+  bottom: -2px;
   width: 100%;
   position: absolute;  
 }

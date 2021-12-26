@@ -145,18 +145,18 @@ p {
   @apply text-white;
 }
 .btn {
-  @apply lg:px-4 px-5 py-2 border-0 border-custom-red rounded-lg text-white bg-custom-red hover:bg-white hover:border hover:border-custom-red hover:text-custom-red lg:mr-2;
+  @apply lg:px-4 px-5 py-2 border-0 border-custom-red rounded-lg text-white bg-custom-red hover:bg-white hover:border-0 hover:border-custom-red hover:text-custom-red lg:mr-2;
 }
 .btn-plain {
   @apply bg-white border-0 border-custom-red hover:bg-custom-red text-custom-red hover:text-white;
 }
 
 .btn-blue {
-  @apply border border-custom-dark-blue bg-custom-dark-blue hover:border hover:border-custom-dark-blue hover:text-custom-dark-blue;
+  @apply border border-custom-dark-blue bg-custom-dark-blue hover:border-0 hover:border-custom-dark-blue hover:text-custom-dark-blue;
 }
 
 .btn-red {
-  @apply border border-custom-dark-red bg-custom-dark-red hover:border hover:border-custom-dark-red hover:text-custom-dark-red;
+  @apply border border-custom-dark-red bg-custom-dark-red hover:border-0 hover:border-custom-dark-red hover:text-custom-dark-red;
 }
 
 .btn-large {
