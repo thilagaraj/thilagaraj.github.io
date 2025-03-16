@@ -107,6 +107,6 @@
     0px 0px 0px 141px #F2F8FA;   
   }
   .__slides {
-    min-height:650px;
+    /*min-height:650px; */
   }
 }

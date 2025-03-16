@@ -165,3 +165,23 @@ p {
 .btn-xlarge {
   @apply lg:py-3.5 py-3 px-5 lg:px-6;
 }
+#banner-container h2 {
+  line-height: 4rem;
+}
+#industry-container {
+  top: -70px;
+  position: relative;
+}
+input[type="radio"]:checked ~ .box span {
+  opacity: 1;
+  background-color:rgb(255 31 57 / var(--tw-bg-opacity));
+
+}
+.text-red{
+  --tw-text-opacity: 1;
+  color: rgb(242 48 48 / var(--tw-text-opacity));
+}
+.border-red {
+  --tw-border-opacity: 1;
+  border-color: rgb(242 48 48 / var(--tw-border-opacity));
+}
